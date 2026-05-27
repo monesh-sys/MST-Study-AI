@@ -1,5 +1,8 @@
 fastapi
 uvicorn
-jinja2
-python-multipart
+pillow
+pytesseract
+PyMuPDF
+fastapi-mail
+python-dotenv
 openai
