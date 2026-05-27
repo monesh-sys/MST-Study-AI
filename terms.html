@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - MST Study AI</title>
+
+    <style>
+
+        body{
+            font-family:Arial,sans-serif;
+            background:#0f172a;
+            color:white;
+            padding:40px;
+            line-height:1.8;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:#111827;
+            padding:40px;
+            border-radius:20px;
+        }
+
+        h1,h2{
+            color:#38bdf8;
+        }
+
+        p{
+            color:#d1d5db;
+        }
+        .box{
+    max-width:800px;
+    margin:auto;
+    background:#111827;
+    padding:25px;
+    border-radius:12px;
+}
+
+a.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 15px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+.review-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    z-index: 999;
+}
+
+.review-container h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.review-container input,
+.review-container textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.review-container input:focus,
+.review-container textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76,175,80,0.3);
+}
+
+.review-container button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.review-container button:hover {
+    background: #45a049;
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Terms & Conditions</h1>
+
+    <p>Last Updated: 2026</p>
+
+    <h2>1. Acceptance</h2>
+
+    <p>
+        By using MST Study AI,
+        you agree to these Terms and Conditions.
+    </p>
+
+    <h2>2. Educational Use</h2>
+
+    <p>
+        MST Study AI is created for educational
+        and study assistance purposes only.
+    </p>
+
+    <h2>3. User Responsibilities</h2>
+
+    <p>
+        Users must not:
+    </p>
+
+    <ul>
+        <li>Upload harmful content</li>
+        <li>Use the platform illegally</li>
+        <li>Attempt to hack or damage the system</li>
+    </ul>
+
+    <h2>4. AI Responses</h2>
+
+    <p>
+        AI-generated answers may sometimes be incorrect.
+        Users should verify important information.
+    </p>
+
+    <h2>5. Intellectual Property</h2>
+
+    <p>
+        MST Study AI branding and design belong
+        to the creator.
+    </p>
+
+    <h2>6. Service Availability</h2>
+
+    <p>
+        We may modify or stop services anytime
+        without notice.
+    </p>
+
+    <h2>7. Limitation of Liability</h2>
+
+    <p>
+        MST Study AI is not responsible for any damages
+        caused by use of the platform.
+    </p>
+
+    <h2>8. Contact</h2>
+
+    <p>
+        Contact: mststudyai@gmail.com
+    </p>
+
+
+</form>
+
+<p id="status"></p>
+
+    <a class="button" href="/">⬅ Back to Chat</a>
+
+</div>
+
+<div class="review-container">
+    <h3>📩 Send Review</h3>
+
+    <input id="email" type="email" placeholder="Your Email" />
+    <textarea id="msg" rows="4" placeholder="Write your review..."></textarea>
+
+    <button onclick="sendReview()">Send</button>
+</div>
+
+<script>
+function sendReview() {
+    let email = document.getElementById("email").value;
+    let msg = document.getElementById("msg").value;
+
+    let url =
+    "https://mail.google.com/mail/?view=cm&fs=1"
+    + "&to=mststudyai@gmail.com"
+    + "&su=MST Study AI Review"
+    + "&body=" + encodeURIComponent("From: " + email + "\n\n" + msg);
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>

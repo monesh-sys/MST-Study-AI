@@ -1,0 +1,395 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    background:#0f172a;
+
+    color:white;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* Main Container */
+.container{
+
+    width:95%;
+
+    max-width:950px;
+
+    height:92vh;
+
+    background:#111827;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+/* Header */
+.header{
+
+    background:#1e293b;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-bottom:1px solid #334155;
+}
+
+.header h1{
+
+    color:#38bdf8;
+
+    font-size:32px;
+
+    margin-bottom:5px;
+}
+
+.header p{
+
+    color:#cbd5e1;
+
+    font-size:15px;
+}
+
+/* Chat Box */
+.chat-box{
+
+    flex:1;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+/* Messages */
+.message{
+
+    padding:14px;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    max-width:80%;
+
+    line-height:1.6;
+
+    word-wrap:break-word;
+}
+
+/* User Message */
+.user{
+
+    background:#2563eb;
+
+    margin-left:auto;
+
+    color:white;
+}
+
+/* Bot Message */
+.bot{
+
+    background:#374151;
+
+    color:white;
+}
+
+/* Input Area */
+.input-area{
+
+    background:#1e293b;
+
+    padding:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+/* Text Input */
+.input-area input[type="text"]{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+}
+
+/* Send Button */
+.send-btn{
+
+    padding:14px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#38bdf8;
+
+    color:black;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.send-btn:hover{
+
+    background:#0ea5e9;
+}
+
+/* Upload Container */
+.upload-container{
+
+    position:relative;
+}
+
+/* Plus Button */
+.plus-btn{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#38bdf8;
+
+    color:black;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.plus-btn:hover{
+
+    transform:rotate(90deg);
+
+    background:#0ea5e9;
+}
+
+/* Upload Menu */
+.upload-menu{
+
+    position:absolute;
+
+    bottom:65px;
+
+    left:0;
+
+    background:#1e293b;
+
+    border-radius:15px;
+
+    padding:10px;
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    min-width:200px;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+
+    z-index:100;
+}
+
+/* Upload Items */
+.upload-menu label{
+
+    background:#334155;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.upload-menu label:hover{
+
+    background:#475569;
+}
+
+/* Task Popup */
+.task-popup{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.6);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+}
+
+/* Popup Box */
+.task-box{
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    width:90%;
+
+    max-width:400px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.task-box h3{
+
+    text-align:center;
+}
+
+/* Popup Input */
+.task-box input{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+}
+
+/* Popup Buttons */
+.task-buttons{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.task-buttons button{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#38bdf8;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+/* Scrollbar */
+.chat-box::-webkit-scrollbar{
+
+    width:8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb{
+
+    background:#38bdf8;
+
+    border-radius:10px;
+}
+
+/* Mobile */
+@media(max-width:700px){
+
+    .container{
+
+        width:100%;
+
+        height:100vh;
+
+        border-radius:0;
+    }
+
+    .header h1{
+
+        font-size:25px;
+    }
+    /* FOOTER */
+.footer-links{
+    background:#0f172a;
+    padding:12px;
+    text-align:center;
+    border-top:1px solid #334155;
+}
+
+.footer-links a{
+    color:#38bdf8;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:14px;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+}
